@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2 class="mentorsh2">Light it mentors</h2>
+    {% for mentor in mentorslist %}
+        <div class="mentor_container">
+            <h4>{{ mentor.name }} {{ mentor.father_name }}</h1>
+            <p><strong>Bio:</strong> <span>{{ mentor.Bio }}</span></p>
+            <p><strong>Experience:</strong> {{ mentor.experience }}</p>
+        </div>
+    {% endfor%}
+{% endblock content %}
